@@ -1,0 +1,33 @@
+{
+  "name": "EWB Core above Core",
+  "drush_recipes_api": "1.0",
+  "core": "7",
+  "weight": 0,
+  "recipe": [
+    {
+      "command": "en",
+      "arguments": [
+        "colorbox,ctools,css_injector,entity,entitycache,module_filter,features,libraries,panels,panelizer,jquery_update,pathauto,strongarm,token,field_group,date,link,entityreference,metatag,navbar,pathauto,radix_layouts,uuid,views,views_bulk_operations,xmlsitemap"
+      ]
+    },
+    {
+      "command": "dis",
+      "arguments": [
+        "overlay,toolbar"
+      ]
+    },
+    {
+      "command": "block-disable",
+      "options": {
+        "module": "search",
+        "delta": "form"
+      }
+    }
+  ],
+  "metadata": {
+    "description": "Enable projects you can not live without!",
+    "version": "1.0",
+    "type": "add-on",
+    "author": "ewb - modification of work by btpro"
+  }
+}

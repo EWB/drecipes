@@ -1,0 +1,44 @@
+{
+	"name": "Quick Site",
+	"drush_recipes_api": "1.0",
+	"weight": "0",
+	"core": "7",
+	"recipe": [
+		{
+			"command": "sql-create",
+			"options": {
+				"db-su": "root",
+				"db-su-pw": "root",
+				"db-url": "\"mysql:\/\/root:root@localhost\/quick\""
+			}
+		},
+		{
+			"command": "dl",
+			"arguments": [
+				"drupal"
+			],
+			"options": {
+				"drupal-project-rename": "quick"
+			}
+		},
+		{
+			"command": "site-install",
+			"arguments": [
+				"standard",
+				"Site"
+			],
+			"options": {
+				"site-name": "Quick",
+				"account-name": "admin",
+				"account-pass": "admin",
+				"db-url": "mysql:\/\/root:root@localhost\/quick"
+			}
+		}
+	],
+	"metadata": {
+		"type": 2,
+		"description": "Build a very quick stock Drupal website",
+		"version": "1.0",
+		"author": null
+	}
+}
