@@ -7,7 +7,7 @@
     {
       "command": "en",
       "arguments": [
-        "colorbox,ctools,css_injector,entity,entitycache,module_filter,features,libraries,panels,panelizer,jquery_update,pathauto,strongarm,token,field_group,date,link,entityreference,metatag,navbar,pathauto,radix_layouts,uuid,views,views_bulk_operations,xmlsitemap"
+        "colorbox,ctools,css_injector,entity,entitycache,features,libraries,panels,panelizer,jquery_update,pathauto,strongarm,token,field_group,date,link,entityreference,metatag,navbar,pathauto,radix_layouts,uuid,views,views_bulk_operations,xmlsitemap"
       ]
     },
     {
